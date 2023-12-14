@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="path/to/your/logo.png" alt="Logo" class="logo">
+            <div class="search-bar">
+                <input type="text" id="movie-search" placeholder="Search for a movie...">
+                <button onclick="searchMovies()">Search</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#genres">Genres</a></li>
+                    <li><a href="login.html">Login</a></li>                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Discover Your Next Favorite Movie</h2>
+            <p>Explore a world of movies and find recommendations tailored just for you.</p>
+            <div class="cta">
+                <label for="genre">Select your favorite genre:</label>
+                <select id="genre">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    
+                </select>
+                <button onclick="getRecommendations()">Get Recommendations</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="search-results">
+        <!-- search results here -->
+    </section>
+
+    <section id="recommended-movies">
+        <div class="container">
+            <h2>Recommended Movies</h2>
+            <div class="genre-filter">
+                <label for="genre-filter">Filter by Genre:</label>
+                <select id="genre-filter" onchange="filterByGenre()">
+                    <option value="all">All Genres</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    
+                </select>
+            </div>
+               <!-- Recommended Movies Here, Chirag -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum augue ac justo suscipit, vel malesuada ligula aliquet.</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <!-- Add contact form or information here -->
+            </section>
+        </div>
+    </footer>
+
+    <div id="movie-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- movie details here -->
+        </div>
+    </div>
+
+    <div id="error-message" class="error-message">
+        <!-- error messages here -->
+    </div>
+
+    <script>
+        function searchMovies() {
+            
+            alert("Placeholder: Search movies logic goes here!");
+        }
+
+        function filterByGenre() {
+            
+            alert("Placeholder: Filter movies by genre logic goes here!");
+        }
+
+        function closeModal() {
+            document.getElementById('movie-details-modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
